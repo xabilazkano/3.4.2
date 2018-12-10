@@ -48,11 +48,9 @@ public class Main {
 					case 2:
 						System.out.println("Enter the name of the contact:");
 						name = sc.next();
-						if (pertsona.readContact(name).equals("100")) {
-							System.out.println("Contact not found");
-						} else {
-							System.out.println(pertsona.readContact(name));
-						}
+
+						System.out.println(pertsona.readContact(name));
+
 						break;
 
 					case 3:
