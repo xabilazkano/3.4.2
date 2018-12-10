@@ -1,3 +1,4 @@
+package com.zubiri.agenda;
 import java.util.ArrayList;
 /**
  * 
@@ -80,8 +81,8 @@ public class Agenda {
 				break;
 
 			case "weight":
-				val = Integer.parseInt(value);
-				kontaktuak.get(index(name)).getPerson().setWeight(val);
+				double val2 = Double.parseDouble(value);
+				kontaktuak.get(index(name)).getPerson().setWeight(val2);
 				System.out.println("Succesfuly edited");
 				break;
 
